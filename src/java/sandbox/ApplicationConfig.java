@@ -30,6 +30,13 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(sandbox.RestResource.class);
+        resources.add(sandbox.service.AeroportFacadeREST.class);
+        resources.add(sandbox.service.AffectationFacadeREST.class);
+        resources.add(sandbox.service.AvionFacadeREST.class);
+        resources.add(sandbox.service.ConstructeurFacadeREST.class);
+        resources.add(sandbox.service.PiloteFacadeREST.class);
+        resources.add(sandbox.service.TypeFacadeREST.class);
+        resources.add(sandbox.service.VolFacadeREST.class);
     }
     
 }
